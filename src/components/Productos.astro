@@ -1,0 +1,204 @@
+<section id="productos" class="productos">
+  <div class="productos-container">
+    <span class="productos-tag">Nuestro menú</span>
+    <h2>Salsas artesanales</h2>
+
+    <div class="productos-grid">
+
+      <!-- CARD 1 -->
+      <div class="producto-card">
+        <div
+          class="producto-img"
+          style="background-image: url('https://www.lacostena.com.mx/media/uploads/Products/salsa_casera_mexicana_tatemada/salsa_mexicana_250g.png');">
+        </div>
+
+        <div class="producto-info">
+          <h3>Original de la Abuela</h3>
+          <span class="picor">🔥🔥 (Suave / Medio)</span>
+          <p class="descripcion">
+            La receta fundadora. Elaborada con tomates frescos, cebolla,
+            cilantro y la mezcla clásica de chile jalapeño y serrano.
+          </p>
+          <p class="frase">Algo como la original salsa de la abuela no puede faltar</p>
+          <span class="precio">$85</span>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="producto-card">
+        <div class="producto-img"
+          style="background-image: url('https://www.lacostena.com.mx/media/uploads/Products/salsa_casera_mexicana_tatemada/salsa_mexicana_250g.png');">
+        </div>
+
+        <div class="producto-info">
+          <h3>Fuego Habanero Tropical</h3>
+          <span class="picor">🔥🔥🔥🔥 (Alto)</span>
+          <p class="descripcion">
+            Explosión de sabor tropical. Chile habanero de la península
+            con mango maduro fresco de la región.
+          </p>
+          <p class="frase">Algo rico pero picoso</p>
+          <span class="precio">$80</span>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="producto-card">
+        <div class="producto-img"
+          style="background-image: url('https://www.lacostena.com.mx/media/uploads/Products/salsa_casera_mexicana_tatemada/salsa_mexicana_250g.png');">
+        </div>
+
+        <div class="producto-info">
+          <h3>Macha de Rancho</h3>
+          <span class="picor">🔥🔥 (Medio)</span>
+          <p class="descripcion">
+            Salsa espesa y aceitosa de chile de árbol y pasilla,
+            ajo, cacahuate y ajonjolí.
+          </p>
+          <p class="frase">Algo tranquilo para pasarla bien</p>
+          <span class="precio">$80</span>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="producto-card">
+        <div class="producto-img"
+          style="background-image: url('https://www.lacostena.com.mx/media/uploads/Products/salsa_casera_mexicana_tatemada/salsa_mexicana_250g.png');">
+        </div>
+
+        <div class="producto-info">
+          <h3>Piquín Asado al Limón</h3>
+          <span class="picor">🔥🔥🔥 (Medio / Alto)</span>
+          <p class="descripcion">
+            Chiles piquín y chipotle asados al fuego
+            con un toque brillante de limón fresco.
+          </p>
+          <p class="frase">Solo los chingones la prueban</p>
+          <span class="precio">$80</span>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="producto-card">
+        <div class="producto-img"
+          style="background-image: url('https://www.lacostena.com.mx/media/uploads/Products/salsa_casera_mexicana_tatemada/salsa_mexicana_250g.png');">
+        </div>
+
+        <div class="producto-info">
+          <h3>Verde del Huerto</h3>
+          <span class="picor">🔥 (Suave)</span>
+          <p class="descripcion">
+            Salsa fresca y cremosa de tomatillo, aguacate
+            y cilantro con un toque suave de serrano.
+          </p>
+          <p class="frase">En cualquier momento es buena</p>
+          <span class="precio">$70</span>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="producto-card">
+        <div class="producto-img"
+          style="background-image: url('https://www.lacostena.com.mx/media/uploads/Products/salsa_casera_mexicana_tatemada/salsa_mexicana_250g.png');">
+        </div>
+
+        <div class="producto-info">
+          <h3>Rojo Pasión</h3>
+          <span class="picor">🔥 (Suave)</span>
+          <p class="descripcion">
+            Salsa de adobo con chile ancho y guajillo,
+            especias y un toque de vinagre de manzana.
+          </p>
+          <p class="frase">Para los que no comen chile</p>
+          <span class="precio">$70</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .productos {
+      background-color: var(--beige);
+      padding: 5rem 1.5rem;
+    }
+
+    .productos-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .productos-tag {
+      color: var(--rojo);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .productos h2 {
+      font-size: 2.5rem;
+      margin: 1rem 0 3rem;
+    }
+
+    .productos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .producto-card {
+      background-color: var(--beige);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .producto-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .producto-img {
+      height: 380px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .producto-info {
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .producto-card h3 {
+      color: var(--rojo);
+      font-size: 1.4rem;
+    }
+
+    .picor {
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .descripcion {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .frase {
+      font-style: italic;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .precio {
+      margin-top: 0.8rem;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--rojo);
+    }
+  </style>
+</section>
