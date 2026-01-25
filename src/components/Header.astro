@@ -1,6 +1,8 @@
 <header class="navbar">
   <div class="navbar-container">
-    <h1 class="logo">La Sureña</h1>
+    <a href="#" aria-label="Ir al inicio">
+  <img style="width: 300px;" src="/logosurenachico.jpeg" alt="La Sureña">
+</a>
 
     <button class="menu-btn" aria-label="Abrir menú">
       ☰
@@ -16,13 +18,22 @@
   </div>
 
   <script>
-    const menuBtn = document.querySelector('.menu-btn');
-    const nav = document.querySelector('.nav');
+  const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('.nav');
+  const navLinks = document.querySelectorAll('.nav-links a');
 
-    menuBtn.addEventListener('click', () => {
-      nav.classList.toggle('open');
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+
+  // Cerrar menú al hacer clic en un link (mobile)
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
     });
-  </script>
+  });
+</script>
+
 
   <style>
     /* ===== NAVBAR BASE ===== */
@@ -30,14 +41,14 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background-color: var(--rojo);
+      background-color: #ee7d39;
       color: white;
     }
 
     .navbar-container {
       max-width: 1200px;
       margin: auto;
-      padding: 1rem 1.5rem;
+      padding: 1rem 1.5rem 0.5rem 1.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -54,6 +65,7 @@
       list-style: none;
       display: flex;
       gap: 1.5rem;
+      font-size: 20px;
     }
 
     .nav-links a {
@@ -99,7 +111,7 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--rojo);
+        background-color: #ee7d39;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
